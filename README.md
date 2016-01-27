@@ -25,6 +25,35 @@ repositories {
 compile 'com.dodola:blockindigo:1.0'
 ```
 
+```java
+public class WatcherApplication extends Application {
+    @Override
+    public void onCreate() {
+        super.onCreate();
+        BlockIndigo.install(this, new BlockCanaryContext());
+    }
+}
+public class FragmentPagerActivity extends AppCompatActivity {
+
+    @Override
+    protected void onCreate(Bundle savedInstanceState) {
+        super.onCreate(savedInstanceState);
+        setContentView(R.layout.activity_scroll);
+        
+        BlockIndigo.get().start(this);
+    }
+    
+       @Override
+    protected void onDestroy() {
+        super.onDestroy();
+        BlockIndigo.get().stop();
+    }
+
+}
+
+```
+
+
 ##相关项目
 [blockcanary](https://github.com/moduth/blockcanary)
 [leakcanary](https://github.com/square/leakcanary)
