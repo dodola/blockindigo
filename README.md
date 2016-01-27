@@ -25,3 +25,7 @@ repositories {
 compile 'com.dodola:blockindigo:1.0'
 ```
 
+##相关项目
+[blockcanary](https://github.com/moduth/blockcanary)
+[leakcanary](https://github.com/square/leakcanary)
+
