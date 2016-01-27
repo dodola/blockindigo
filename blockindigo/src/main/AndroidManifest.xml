@@ -1,0 +1,9 @@
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="dodola.blockindigo">
+
+    <application
+        android:supportsRtl="true">
+
+    </application>
+
+</manifest>
